@@ -2,9 +2,10 @@
 <html>
    <head>
       <meta charset="utf-8">
-      <title>Good Design</title>
+      <title>RMathews Design</title>
       <link href='fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
       <link href='fonts.googleapis.com/css?family=Neuton' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
       <style>
 
 html {
@@ -30,6 +31,9 @@ ul {
 img {
    padding: 10px;
 }
+.resume {
+   float: left;
+}
 div {
    float: left;
 }
@@ -46,13 +50,12 @@ a:hover {
    background-color: white;
    color:grey;
 }
-
 img:hover {
    color: grey;
 }
 h1 {
    font-size: 3.51em;
-   font-family: 'Open Sans Condensed', sans-serif;
+   font-family: 'Neuton', sans-serif;
    float: right;
    padding-right: 5%;
    position: fixed;
@@ -60,23 +63,25 @@ h1 {
 }
 
 h2 {
-   font-family: 'Neuton', serif;
-   padding-top: 25%;
-padding-left: 2%;
-   float: left;
-
+   font-family: 'Open Sans Condensed', sans-serif;
 
 }
-
+.nav {
+   position: fixed;
+   padding-left: 51%;
+   padding-top: 7%;
+}
 }
       </style>
    </head>
    <body>
       <h1>Resume</h1>
       <div>
-         <img src="resum.pdf" alt="" width="" height="">
+         <img class="resume" src="Resume.jpg" alt="" width="" height="600">
+         <img class="resume" src="Resumep2.jpg" alt="" width="" height ="600">
       </div>
-      <h2><a href="about.html">About</a></h2>
-      <h2><a href="resume.html">Resume</a></h2>
+      <div class="nav">
+      <h2><a href="index.html">&#8592; Home</a></h2>
+      </div>
    </body>
 </html>
