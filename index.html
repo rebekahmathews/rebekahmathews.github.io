@@ -32,9 +32,7 @@ ul {
 img {
    padding: 10px;
 }
-div {
-   float: left;
-}
+
 
 p {
    font-family: 'Open Sans Condensed', sans-serif;
@@ -78,21 +76,77 @@ nav li {
 
 
 }
+a {
+   color: black;
+   font-variant: normal;
+   text-decoration: none;
+
+}
+a:hover {
+   background-color: white;
+   color:grey;
+.imagehover p {
+color: #fff;
+}
+.imagehover p:hover {
+color: #000;
+}
+ul.img-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+ul.img-list li {
+  display: inline-block;
+  height: 100px;
+  position: relative;
+  width: 100px;
+}
+
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 550px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100px;
+  opacity: 0;
+}
+
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.img-list li:hover span.text-content {
+  opacity: 1;
+}
       </style>
    </head>
    <body>
       <h1>  Interior<br> Design<br> Portfolio</h1>
-      <ul>
-         <li>
-            <div id="rule4-img"><a href="rendering.html"><img src="rendering.jpg" alt="" width="100" height="550"></a></div>
+      <ul class="img-list">
+        <li>
+            <a href="#rendering">
+            <img src="rendering.jpg" alt="" width="100" height="550" />
+            <span class="text-content"><span>Rendering</span></span>
+            </a>
          </li>
          <li>
-            <div id="rule5-img"><a href="design.html"><img src="art.jpg" alt="" width="100" height="450"></a></div>
+            <a href="#design">
+            <img src="design.jpg" alt="" width="100" height="450">
+             <span class="text-content"><span>Design</span></span>
+            </a>
          </li>
          <li>
-
-            <div id="rule6-img"><a href="art.html"><img src="design.jpg" alt="" width="150" height="500"></a></div>
-         </li>
+            <a href="#art">
+               <img src="photoshop.JPG" alt="" width="150" height="500">
+            <span class="text-content"><span>Art</span></span>
+            </a>
          <li>
             <div id="rule7-img"><a href="photoshop.html"><img src="photoshop.JPG" alt="" width="75" height="520"></a></div>
           </li>
